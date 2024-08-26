@@ -486,6 +486,7 @@ p {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 5rem;
           flex: 0 0 5rem;
+	width: 5rem;
   position: relative;
   z-index: 3;
 }
