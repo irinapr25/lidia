@@ -1,0 +1,34 @@
+// Стили для отзывчивых изображений (IBG) ======================================
+// Snippet (HTML): ibg (изображения с классом)
+// Snippet (HTML): ibga (ссылка a внутри с изображением с классом ibg)
+// .ibg {
+// 	width: 100%;
+// 	height: 100%;
+// 	object-fit: cover;
+// object-position: 50% 50%;
+// 	&--top {
+// 		object-position: top;
+// 	}
+// 	&--bottom {
+// 		object-position: bottom;
+// 	}
+// 	&--left {
+// 		object-position: left;
+// 	}
+// 	&--right {
+// 		object-position: right;
+// 	}
+// 	&--contain {
+// 		object-fit: contain;
+// 	}
+// }
+
+//=======================================================
+// чтобы не дергалось изображение при наведении-отведении для блока внутри которого img
+:is(div, a) img {
+	// -webkit-will-change: transform;
+	-moz-will-change: transform;
+	-ms-will-change: transform;
+	will-change: transform;
+	transform-origin: center center;
+}

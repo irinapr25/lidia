@@ -1,0 +1,29 @@
+/* block-header - Title-Figma */
+.block-header {
+	font-weight: 800;
+	display: grid;
+	row-gap: toRem(10);
+	// .block-header__label
+	&__label {
+		color: $text-accent;
+		// font-size: toRem(18);
+		@include adaptiveValue('font-size', 18, 16);
+		// letter-spacing: toEm(2, 18);
+		line-height: math.div(23, 18);
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+	}
+	// .block-header__title
+	&__title {
+		text-wrap: balance;
+		color: $text-secondary;
+		text-transform: capitalize;
+		// font-size: toRem(48);
+		@include adaptiveValue('font-size', 48, 40);
+		line-height: math.div(65, 48);
+		letter-spacing: 0.01em;
+		span {
+			text-transform: none;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+// Site colors (Цвета сайта): =================================================================
+$primary: #4475f2;
+
+// Background colors (Цвета фона):
+$bg-primary: #fff; // rgb(255, 255, 255)
+$bg-accent: #4737ff;
+
+// Text colors (Цвета текста):
+$text-primary: #5e6282; // rgb(94, 98, 130)
+$text-secondary: #000;
+$text-on-bg: #fff;
+$text-accent: #4475f2;
+
+$link-active: #4737ff;
+$link-inactive: #9a9ea6;
+$heading: #181e4b;
+$desc: #5e6282;
+$placeholder: #9c9c9c;
+// $border: #dedede;
+$border: #bdbdbd;
+
+$gradient: linear-gradient(45deg, #4737ff 0%, #6ea4fc 100%);
+
+// effect styles box-shadow, border-radius:
+
+// $extrabold-shadow-dark: 0 30px 60px 0 rgba(71, 74, 87, 0.25);
+$extrabold-shadow-dark: 0 toEm(30, 16) toEm(60, 16) 0 rgba(71, 74, 87, 0.25);
+// $bold-shadow-dark: 0 15px 30px 0 rgba(0, 0, 0, 0.25);
+$bold-shadow-dark: 0 toEm(15, 16) toEm(30, 16) 0 rgba(0, 0, 0, 0.25);
+// $bold-shadow-primary: 0 30px 60px 0 rgba(68, 117, 242, 0.25);
+$bold-shadow-primary: 0 toRem(30) toRem(60) 0 rgba($primary, 0.25);
+$bold-shadow-primary-hover: 0 toRem(30) toRem(60) 0 rgba($link-active, 0.25);
+$bold-shadow-primary-active: 0 toRem(20) toRem(50) 0 rgba($link-active, 0.4);
+// $normal-shadow-dark: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+$normal-shadow-dark: 0 toEm(15, 16) toEm(30, 16) 0 rgba(0, 0, 0, 0.1);
+$normal-shadow-primary: 0 15px 30px 0 rgba($primary, 0.1);
+
+$border-radius-main: toRem(10);
+// $border-radius-icon: 26px;
+
+// $card-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.02), 0 7px 5px 0 rgba(0, 0, 0, 0.03), 0 13px 10px 0 rgba(0, 0, 0, 0.04), 0 22px 18px 0 rgba(0, 0, 0, 0.04), 0 42px 33px 0 rgba(0, 0, 0, 0.05), 0 100px 80px 0 rgba(0, 0, 0, 0.07);
+$card-box-shadow: 0 toEm(3, 16) toEm(2, 16) 0 rgba(0, 0, 0, 0.02), 0 toEm(7, 16) toEm(5, 16) 0 rgba(0, 0, 0, 0.03), 0 toEm(13, 16) toEm(10, 16) 0 rgba(0, 0, 0, 0.04), 0 toEm(22, 16) toEm(18, 16) 0 rgba(0, 0, 0, 0.04), 0 toEm(42, 16) toEm(33, 16) 0 rgba(0, 0, 0, 0.05), 0 toEm(100, 16) toEm(80, 16) 0 rgba(0, 0, 0, 0.07);

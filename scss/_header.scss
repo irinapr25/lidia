@@ -1,0 +1,87 @@
+/* HEADER */
+.header {
+	padding-block: toRem(5); // отступы безопасности сверху-снизу
+	// padding-top: toRem(77);
+	// @include adaptiveValue('padding-top', 77, 20);
+	//min-height: 115px;
+	@include adaptiveValue('min-height', 115, 90); // высота шапки = 28+77+2*5=115
+	@include adaptiveValue('font-size', 16, 13); // для box-shadow
+	background-color: $bg-primary;
+	// background-color: rgba(255, 255, 0, 0.5);
+	display: flex;
+	align-items: end;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	// position: fixed;
+	z-index: 2;
+	&._header-scroll {
+		// @include adaptiveValue('min-height', 90, 60);
+		position: fixed; // при html scrollbar-gutter: stable; будет скакать контент у header при клике на бургер
+		// position: sticky; // если использовать, тогда не правильно работает прокрутка к блоку
+		z-index: 4;
+		top: -200%;
+	}
+	&._header-show {
+		transition: top 0.5s ease 0s;
+		top: 0;
+		box-shadow: $normal-shadow-dark;
+		@media (forced-colors: active) {
+			border-bottom: toRem(1) solid LinkText;
+		}
+	}
+
+	@media (max-width: $tablet) {
+		z-index: 5;
+	}
+	// .header__container
+	&__container {
+		flex-grow: 1;
+	}
+	// .header__navbar
+	&__navbar {
+		display: flex;
+		column-gap: toRem(30);
+		align-items: center;
+		// @include adaptiveValue('min-height', 115, 90);
+		@include adaptiveValue('max-width', 543, 460, 2, $containerWidth, 992); //533px+10px padding-right у menu-item
+		@media (min-width: toEm(992)) {
+			// background-color: green;
+
+			// max-width: percent(533, 1200);
+			// max-width: 50%;
+			// column-gap: toRem(10);
+			position: relative;
+			z-index: 4;
+		}
+	}
+
+	/* LOGO */
+	// .header__logo-link
+	&__logo-link {
+		margin-right: auto;
+		flex: 0 0 toRem(80);
+		position: relative;
+		z-index: 3;
+	}
+	// .header__logo img
+	&__logo {
+		max-width: 100%;
+		min-height: 100%;
+		@media (forced-colors: active) {
+			filter: invert(1);
+			// filter: contrast(0.5);
+		}
+		@media (prefers-color-scheme: dark) {
+			filter: invert(1);
+		}
+
+		@media (forced-colors: active) and (prefers-color-scheme: light) {
+			filter: invert(0);
+		}
+	}
+	// .header__menu
+	&__menu {
+	}
+}

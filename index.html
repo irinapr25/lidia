@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lidia - search & review your fav book effortlessly</title>
+	<meta name="description" content="Rent your favorite book fairly easy on Lidia!">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- favicon -->
+	<link rel="icon" href="./favicon.ico">
+	<link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+	<link rel="manifest" href="./favicons/site.webmanifest">
+	<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div class="wrapper">
+
+		<!-- HEADER -->
+		<header class="header" id="header" data-lp data-scroll data-scroll-show>
+			<!-- <header class="header" id="header" data-scroll data-scroll-show> -->
+			<div class="header__container">
+				<div class="header__navbar">
+					<!-- LOGO -->
+					<a class="header__logo-link logo" href="#hero" data-goto="#hero" aria-label="Logo of the site. Return to the top of the page.">
+						<img class="header__logo" src="img/logo/logo-text.svg" alt="Logo">
+					</a>
+					<!-- /logo -->
+
+					<!-- NAV MENU -->
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list" id="menu-list">
+								<li class="menu__item">
+									<a class="menu__link" href="#features" data-goto="#features" data-goto-header aria-label="Go to Feature block.">Feature</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#services" data-goto="#services" data-goto-header aria-label="Go to Service block.">Service</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#reviews" data-goto="#reviews" data-goto-header aria-label="Go to Review block.">Review</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#location" data-goto="#location" data-goto-header aria-label="Go to Location block.">Location</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!-- /nav menu -->
+
+					<!-- BURGER -->
+					<!-- <button class="menu__icon icon-menu" type="button" aria-expanded="false" aria-controls="menu-list" aria-label="Open menu.">
+						<span></span>
+					</button> -->
+					<button class="menu__icon icon-menu" type="button" aria-expanded="false" aria-controls="menu-list" aria-label="Open menu.">
+						<span class="icon-menu__wrapper">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+
+					<!-- /burger -->
+				</div>
+			</div>
+		</header>
+		<!-- /header -->
+
+		<!-- MAIN -->
+		<main class="page">
+			<!-- HERO -->
+			<section class="page__hero hero section" id="hero" data-watch="navigator">
+				<div class="hero__container">
+					<!-- CONTENT-HERO -->
+					<div class="hero__content content-hero">
+						<h1 class="content-hero__title">Search &amp;&nbsp;review your <a href="/" target="_blank" rel="noopener" aria-label="Find Your favorite book in library application.">fav&nbsp;book</a> effortlessly</h1>
+						<div class="content-hero__text">
+							<p>
+								Embark on&nbsp;a&nbsp;literary journey like never before with our revolutionary
+								library application! Introducing a&nbsp;seamless experience
+								that transcends traditional boundaries, where you
+								can effortlessly search your favorite books.
+								<svg>
+									<use xlink:href="icons/icons.svg#sparkles"></use>
+								</svg>
+							</p>
+						</div>
+
+						<!-- POPUP OPEN -->
+						<button class="button__popup" type="button" data-popup="#popup"> Я открываю попап </button>
+						<!-- /popup open -->
+
+						<a class="content-hero__button" href="/" target="_blank" rel="noopener" aria-label="Link to library application.">
+							Start now
+							<svg>
+								<use xlink:href="icons/icons.svg#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+					<!-- /content-hero -->
+
+					<!-- IMAGES-HERO -->
+					<div class="hero__images images-hero">
+						<a class="images-hero__item images-hero__item--01" href="#">
+							<picture>
+								<source srcset="img/hero/book-1.avif" type="image/avif">
+								<source srcset="img/hero/book-1.webp" type="image/webp">
+								<img class="images-hero__img" src="img/hero/book-1.jpg" loading="lazy" alt="Book - J.S. Khairen: Dompet Ayah Sepatu Blu.">
+							</picture>
+						</a>
+						<a class="images-hero__item images-hero__item--02" href="#">
+							<picture>
+								<source srcset="img/hero/book-2.avif" type="image/avif">
+								<source srcset="img/hero/book-2.webp" type="image/webp">
+								<img class="images-hero__img" src="img/hero/book-2.jpg" loading="lazy" alt="Book - Malcolm Gladwell: Talking to Strangers.">
+							</picture>
+						</a>
+						<a class="images-hero__item images-hero__item--03" href="#">
+							<picture>
+								<source srcset="img/hero/book-3.avif" type="image/avif">
+								<source srcset="img/hero/book-3.webp" type="image/webp">
+								<img class="images-hero__img" src="img/hero/book-3.jpg" loading="lazy" alt="Book - Jason Barron: The Visual MBA.">
+							</picture>
+						</a>
+						<a class="images-hero__item images-hero__item--04" href="#">
+							<picture>
+								<source srcset="img/hero/book-4.avif" type="image/avif">
+								<source srcset="img/hero/book-4.webp" type="image/webp">
+								<img class="images-hero__img" src="img/hero/book-4.jpg" loading="lazy" alt="Book - Laut Bercerita: Sebuah novel oleh Leila S. Chudori.">
+							</picture>
+						</a>
+					</div>
+					<!-- /images-hero -->
+				</div>
+			</section>
+			<!-- /hero -->
+
+			<!-- FEATURES -->
+			<section class="page__features features section" id="features" data-watch="navigator">
+				<div class="features__container">
+
+					<!-- POPUP OPEN -->
+					<button class="button button__popup" type="button" data-popup="#popup"> Я открываю попап </button>
+					<!-- /popup open -->
+
+					<div class="features__block-header block-header">
+						<div class="block-header__label">FEATURES</div>
+						<h2 class="block-header__title">What You Can Do?</h2>
+					</div>
+
+					<div class="features__items">
+						<a href="" class="features__item">
+							<div class="features__icon">
+								<svg>
+									<use xlink:href="icons/icons.svg#search"></use>
+								</svg>
+							</div>
+							<h3 class="features__title">
+								Search book Search book
+							</h3>
+							<div class="features__text">
+								<p>Effortlessly find your next read with our powerful and intuitive book search.</p>
+								<p>Effortlessly find your next read with our powerful and intuitive book search.</p>
+							</div>
+						</a>
+
+						<div class="features__item">
+							<div class="features__icon">
+								<svg>
+									<use xlink:href="icons/icons.svg#review"></use>
+								</svg>
+							</div>
+							<h3 class="features__title">
+								Review book
+							</h3>
+							<div class="features__text">
+								<p>Discover insightful critiques and share your thoughts on&nbsp;diverse literary masterpieces effortlessly.</p>
+							</div>
+						</div>
+
+						<a href="" class="features__item">
+							<div class="features__icon">
+								<svg>
+									<use xlink:href="icons/icons.svg#wishlist"></use>
+								</svg>
+							</div>
+							<h3 class="features__title">
+								Wishlist book
+							</h3>
+							<div class="features__text">
+								<p>Curate your literary dreams&#8288;&ndash;&#8288;wishlist books for future adventures and discoveries.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- /features -->
+
+			<!-- SERVICES -->
+			<section class="page__services services section" id="services" data-watch="navigator">
+				<div class="services__container">
+					<div class="services__block-header block-header">
+						<div class="block-header__label">Services</div>
+						<h2 class="block-header__title">The services <span>for</span> You</h2>
+					</div>
+
+					<div class="services__content-block">
+						<!-- ARTICLE 1 -->
+						<article class="services__article article-services">
+							<div class="article-services__content">
+								<h3 class="article-services__title">
+									<span>Rent</span> your favorite book fairly easy on&nbsp;<span>Lidia</span>!
+								</h3>
+								<div class="article-services__text">
+									<p>Viewing, rent, and organize your favorite books has never been easier. An&nbsp;integrated digital library rent that&rsquo;s simple to&nbsp;use, Lidia lets you spend less time managing your work and more time actually doing&nbsp;it!</p>
+									<p>Effortless rentals, personalized shelves&mdash;Lidia transforms book management, enhancing your reading experience~</p>
+								</div>
+							</div>
+							<a href="" class="article-services__image">
+								<picture>
+									<source srcset="img/services/library-hall-1200x798.avif" type="image/avif">
+									<source srcset="img/services/library-hall-1200x798.webp" type="image/webp">
+									<img class="article-services__img" src="img/services/library-hall-1200x798.jpg" loading="lazy" alt="Library in Amsterdam the Netherlands.">
+								</picture>
+							</a>
+						</article>
+						<!-- /article 1 -->
+
+						<!-- ARTICLE 2 -->
+						<article class="services__article article-services">
+							<div class="article-services__content">
+								<h3 class="article-services__title">
+									Quick Book Rentals:<br><span>Dive</span> into <span>Reading</span> Instantly
+								</h3>
+								<div class="article-services__text">
+									<p>Discover instant literary delight. Access a&nbsp;vast library, borrow your favorite reads, and dive into captivating stories within minutes. Reading made quick and easy, just a&nbsp;click away!</p>
+									<p>Unlock a&nbsp;world of&nbsp;stories effortlessly. Browse genres, choose, rent in&nbsp;minutes. Seamlessly manage your reading adventures with our intuitive platform~</p>
+								</div>
+							</div>
+							<a href="" class="article-services__image">
+								<picture>
+									<source srcset="img/services/library-hall-2-1200x798.avif" type="image/avif">
+									<source srcset="img/services/library-hall-2-1200x798.webp" type="image/webp">
+									<img class="article-services__img" src="img/services/library-hall-2-1200x798.jpg" loading="lazy" alt="People standing and sitting in Stuttgart Library.">
+								</picture>
+							</a>
+						</article>
+						<!-- /article 2 -->
+					</div>
+				</div>
+			</section>
+			<!-- /services -->
+
+			<!-- REVIEWS -->
+			<section class="page__reviews reviews section" id="reviews" data-watch="navigator">
+				<div class="reviews__container">
+					<div class="reviews__block-header block-header">
+						<div class="block-header__label">reviews</div>
+						<h2 class="block-header__title">Reviews <span>of</span> Others</h2>
+					</div>
+
+					<div class="reviews__items">
+						<article class="reviews__item">
+							<div class="reviews__avatar">
+								<picture>
+									<source srcset="img/reviews/01.avif" type="image/avif">
+									<source srcset="img/reviews/01.webp" type="image/webp">
+									<img class="reviews__img" src="img/reviews/01.jpg" alt="Ahmad Saugi - College Student - avatar.">
+								</picture>
+							</div>
+							<div class="reviews__text">
+								<p>Engaging plot, vivid characters; a&nbsp;captivating read that lingers in&nbsp;your thoughts.</p>
+								<p>Engaging plot, vivid characters; a&nbsp;captivating read that lingers in&nbsp;your thoughts.</p>
+							</div>
+							<h3 class="reviews__title">
+								<a class="reviews__title-link" href="/0" target="_blank" rel="noopener" aria-label="View review by Ahmad Saugi">Ahmad Saugi</a>
+							</h3>
+							<div class="reviews__position">
+								College Student
+							</div>
+						</article>
+
+						<article class="reviews__item">
+							<div class="reviews__avatar">
+								<picture>
+									<source srcset="img/reviews/02.avif" type="image/avif">
+									<source srcset="img/reviews/02.webp" type="image/webp">
+									<img class="reviews__img" src="img/reviews/02.jpg" alt="Muhammad Alfian - avatar.">
+								</picture>
+							</div>
+							<div class="reviews__text">
+								<p>Thought-provoking narrative and rich prose. A&nbsp;must-read for any avid book lover!</p>
+							</div>
+							<h3 class="reviews__title">
+								<a class="reviews__title-link" href="/0" target="_blank" rel="noopener" aria-label="View review by Muhammad Alfian.">Muhammad Alfian</a>
+							</h3>
+							<div class="reviews__position">
+								School Student
+							</div>
+						</article>
+
+						<article class="reviews__item">
+							<div class="reviews__avatar">
+								<picture>
+									<source srcset="img/reviews/03.avif" type="image/avif">
+									<source srcset="img/reviews/03.webp" type="image/webp">
+									<img class="reviews__img" src="img/reviews/03.jpg" alt="Wahyu Amirulloh - ERP Developer - avatar.">
+								</picture>
+							</div>
+							<div class="reviews__text">
+								<p>Engaging plot, vivid characters; a&nbsp;captivating read that lingers in&nbsp;your thoughts.</p>
+							</div>
+							<h3 class="reviews__title">
+								<a class="reviews__title-link" href="/0" target="_blank" rel="noopener" aria-label="View review by Wahyu Amirulloh.">Wahyu Amirulloh</a>
+							</h3>
+							<div class="reviews__position">
+								College Student
+							</div>
+						</article>
+					</div>
+
+					<!-- POPUP OPEN -->
+					<button class="button__popup" type="button" data-popup="#popup"> Я открываю попап </button>
+					<!-- /popup open -->
+
+
+				</div>
+			</section>
+			<!-- /reviews -->
+
+			<!-- LOCATION -->
+			<section class="page__location location section" id="location" data-watch="navigator">
+				<div class="location__container">
+					<div class="location__block-header block-header">
+						<div class="block-header__label">location</div>
+						<h2 class="block-header__title">Our Library Location</h2>
+					</div>
+
+					<div class="location__map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5756332060982!2d106.63479127340803!3d-6.187501193800044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f92925ba734d%3A0x30f6fda4d874bebd!2sJl.%20Veteran%20No.1A%2C%20RT.005%2FRW.002%2C%20Babakan%2C%20Kec.%20Tangerang%2C%20Kota%20Tangerang%2C%20Banten%2015118%2C%20Indonesia!5e0!3m2!1sen!2slv!4v1719841806457!5m2!1sen!2slv" width="600" height="450" style="border:none;" allowfullscreen=""
+							loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Our office location."></iframe>
+					</div>
+				</div>
+			</section>
+			<!-- /location -->
+
+			<!-- <div class="block-header">
+				<div class="block-header__label">FEATURES</div>
+				<h2 class="block-header__title">What You Can Do?</h2>
+			</div> -->
+		</main>
+		<!-- /main -->
+
+
+		<!-- FOOTER -->
+		<footer class="footer section" id="footer" data-watch="navigator">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__item">
+						<h5 class="footer__title">
+							Managed By
+						</h5>
+						<a class="footer__logo-link logo" href="#hero" data-goto="#hero" aria-label="Logo of the site. Return to the top of the page.">
+							<img class="footer__logo" src="img/logo/logo-text.svg" alt="Logo">
+						</a>
+					</div>
+
+					<!-- SOCIAL -->
+					<div class="footer__item">
+						<h5 class="footer__title">
+							Social Media
+						</h5>
+						<div class="footer__soc1als soc1als">
+							<a class="soc1als__item" href="https://x.com/" target="_blank" rel="noopener" aria-label="Link to X twitter profile.">
+								<svg>
+									<use xlink:href="icons/icons.svg#x-twitter"></use>
+								</svg>
+							</a>
+							<a class="soc1als__item" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Link to Instagram profile.">
+								<svg>
+									<use xlink:href="icons/icons.svg#instagram"></use>
+								</svg>
+							</a>
+							<a class="soc1als__item" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Link to facebook profile.">
+								<svg>
+									<use xlink:href="icons/icons.svg#facebook"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<!-- /social -->
+
+					<div class="footer__item">
+						<h4 class="footer__title">
+							Slogan
+						</h4>
+						<a class="footer__link" href="/" aria-label="Find your favorite book using hashtag #RentFavBooks in social media.">
+							#RentFavBooks
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copy">
+				&copy;&nbsp;2024&nbsp;Lidia. All rights reserved.
+			</div>
+		</footer>
+		<!-- /footer -->
+
+	</div>
+	<!-- /wrapper -->
+
+	<!-- POPUP -->
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button class="popup__close" type="button" data-close aria-label="Close popup">
+					<span></span>
+					<span></span>
+				</button>
+				<div class="popup__text">
+					Popup content
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /popup -->
+
+	<!-- JS -->
+	<script type="module" src="js/script.js"></script>
+</body>
+
+</html>
