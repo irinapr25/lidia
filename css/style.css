@@ -54,7 +54,6 @@ body {
 body {
   color: #5e6282;
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 1rem;
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -486,7 +485,6 @@ p {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 5rem;
           flex: 0 0 5rem;
-	width: 5rem;
   position: relative;
   z-index: 3;
 }
@@ -495,12 +493,6 @@ p {
   min-height: 100%;
 }
 @media (forced-colors: active) {
-  .header__logo {
-    -webkit-filter: invert(1);
-            filter: invert(1);
-  }
-}
-@media (prefers-color-scheme: dark) {
   .header__logo {
     -webkit-filter: invert(1);
             filter: invert(1);
@@ -2236,12 +2228,6 @@ p {
   max-width: 10.3333333333em;
 }
 @media (forced-colors: active) {
-  .footer__logo {
-    -webkit-filter: invert(1);
-            filter: invert(1);
-  }
-}
-@media (prefers-color-scheme: dark) {
   .footer__logo {
     -webkit-filter: invert(1);
             filter: invert(1);
